@@ -6,6 +6,7 @@
         <meta name='robots' content='max-image-preview:large'/>
         
         <title>Sobre &#8211;Pesquisas aplicadas A análise de dados</title>
+
         <link rel="alternate" type="application/rss+xml" title="Feed para Pesquisas aplicadas A análise de dados &raquo;" href="../../feed/index.html"/>
         <link rel="alternate" type="application/rss+xml" title="Feed de comentários para Pesquisas aplicadas A análise de dados &raquo;" href="../../feed/index.html"/>
         <script type="text/javascript">
@@ -23,131 +24,8 @@
             }
             /* ]]> */
         </script>
-        <script>
-            window._wpemojiSettings = {
-                "baseUrl": "https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/",
-                "ext": ".png",
-                "svgUrl": "https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/",
-                "svgExt": ".svg",
-                "source": {
-                    "concatemoji": "https:\/\/s0.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1719498190i&ver=6.7-beta3-59263"
-                }
-            };
-            /*! This file is auto-generated */
-            !function(i, n) {
-                var o, s, e;
-                function c(e) {
-                    try {
-                        var t = {
-                            supportTests: e,
-                            timestamp: (new Date).valueOf()
-                        };
-                        sessionStorage.setItem(o, JSON.stringify(t))
-                    } catch (e) {}
-                }
-                function p(e, t, n) {
-                    e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(t, 0, 0);
-                    var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)
-                      , r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(n, 0, 0),
-                    new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
-                    return t.every(function(e, t) {
-                        return e === r[t]
-                    })
-                }
-                function u(e, t, n) {
-                    switch (t) {
-                    case "flag":
-                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
-                    case "emoji":
-                        return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
-                    }
-                    return !1
-                }
-                function f(e, t, n) {
-                    var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300,150) : i.createElement("canvas")
-                      , a = r.getContext("2d", {
-                        willReadFrequently: !0
-                    })
-                      , o = (a.textBaseline = "top",
-                    a.font = "600 32px Arial",
-                    {});
-                    return e.forEach(function(e) {
-                        o[e] = t(a, e, n)
-                    }),
-                    o
-                }
-                function t(e) {
-                    var t = i.createElement("script");
-                    t.src = e,
-                    t.defer = !0,
-                    i.head.appendChild(t)
-                }
-                "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports",
-                s = ["flag", "emoji"],
-                n.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                },
-                e = new Promise(function(e) {
-                    i.addEventListener("DOMContentLoaded", e, {
-                        once: !0
-                    })
-                }
-                ),
-                new Promise(function(t) {
-                    var n = function() {
-                        try {
-                            var e = JSON.parse(sessionStorage.getItem(o));
-                            if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests)
-                                return e.supportTests
-                        } catch (e) {}
-                        return null
-                    }();
-                    if (!n) {
-                        if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
-                            try {
-                                var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));"
-                                  , r = new Blob([e],{
-                                    type: "text/javascript"
-                                })
-                                  , a = new Worker(URL.createObjectURL(r),{
-                                    name: "wpTestEmojiSupports"
-                                });
-                                return void (a.onmessage = function(e) {
-                                    c(n = e.data),
-                                    a.terminate(),
-                                    t(n)
-                                }
-                                )
-                            } catch (e) {}
-                        c(n = f(s, u, p))
-                    }
-                    t(n)
-                }
-                ).then(function(e) {
-                    for (var t in e)
-                        n.supports[t] = e[t],
-                        n.supports.everything = n.supports.everything && n.supports[t],
-                        "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
-                    n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag,
-                    n.DOMReady = !1,
-                    n.readyCallback = function() {
-                        n.DOMReady = !0
-                    }
-                }).then(function() {
-                    return e
-                }).then(function() {
-                    var e;
-                    n.supports.everything || (n.readyCallback(),
-                    (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji),
-                    t(e.wpemoji)))
-                }))
-            }((window,
-            document), window._wpemojiSettings);
-        </script>
-        <link crossorigin='anonymous' rel='stylesheet' id='all-css-0-1' href='https://s0.wp.com/wp-content/mu-plugins/wpcom-theme-compat/blockbase.css?m=1633680961i&cssminify=yes' type='text/css' media='all'/>
+        
+        <link rel='stylesheet' id='all-css-0-1' href='../../wp-content/themes/blockbase/assets/css/all-css-0-1.css' media='all'/>
         <style id='blockbase_font_faces-inline-css'>
             /* latin-ext */
             @font-face {
@@ -155,7 +33,7 @@
                 font-style: italic;
                 font-weight: 400;
                 font-display: swap;
-                src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Regular-italic.woff2) format('woff2');
+                src: url(../../wp-content/themes/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Regular-italic.woff2) format('woff2');
                 unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
             }
 
@@ -165,7 +43,7 @@
                 font-style: italic;
                 font-weight: 400;
                 font-display: swap;
-                src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-Regular-italic.woff2) format('woff2');
+                src: url(../../wp-content/themes/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Regular-italic.woff2) format('woff2');
                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
             }
 
@@ -175,7 +53,7 @@
                 font-style: italic;
                 font-weight: 500;
                 font-display: swap;
-                src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Medium-italic.woff2) format('woff2');
+                src: url(../../wp-content/themes/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Medium-italic.woff2) format('woff2');
                 unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
             }
 
@@ -185,7 +63,7 @@
                 font-style: italic;
                 font-weight: 500;
                 font-display: swap;
-                src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-Medium-italic.woff2) format('woff2');
+                src: url(../../wp-content/themes/blockbase/assets/fonts/dm-sans/dm-sans-Medium-italic.woff2) format('woff2');
                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
             }
 
@@ -195,7 +73,7 @@
                 font-style: italic;
                 font-weight: 700;
                 font-display: swap;
-                src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Bold-italic.woff2) format('woff2');
+                src: url(../../wp-content/themes/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Bold-italic.woff2) format('woff2');
                 unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
             }
 
@@ -205,7 +83,7 @@
                 font-style: italic;
                 font-weight: 700;
                 font-display: swap;
-                src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-Bold-italic.woff2) format('woff2');
+                src: url(../../wp-content/themes/blockbase/assets/fonts/dm-sans/dm-sans-Bold-italic.woff2) format('woff2');
                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
             }
 
@@ -215,7 +93,7 @@
                 font-style: normal;
                 font-weight: 400;
                 font-display: swap;
-                src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Regular.woff2) format('woff2');
+                src: url(../../wp-content/themes/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Regular.woff2) format('woff2');
                 unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
             }
 
@@ -225,7 +103,7 @@
                 font-style: normal;
                 font-weight: 400;
                 font-display: swap;
-                src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-Regular.woff2) format('woff2');
+                src: url(../../wp-content/themes/blockbase/assets/fonts/dm-sans/dm-sans-Regular.woff2) format('woff2');
                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
             }
 
@@ -235,7 +113,7 @@
                 font-style: normal;
                 font-weight: 500;
                 font-display: swap;
-                src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Medium.woff2) format('woff2');
+                src: url(../../wp-content/themes/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Medium.woff2) format('woff2');
                 unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
             }
 
@@ -245,7 +123,7 @@
                 font-style: normal;
                 font-weight: 500;
                 font-display: swap;
-                src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-Medium.woff2) format('woff2');
+                src: url(../../wp-content/themes/blockbase/assets/fonts/dm-sans/dm-sans-Medium-italic.woff2) format('woff2');
                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
             }
 
@@ -255,7 +133,7 @@
                 font-style: normal;
                 font-weight: 700;
                 font-display: swap;
-                src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Bold.woff2) format('woff2');
+                src: url(../../wp-content/themes/blockbase/assets/fonts/dm-sans/dm-sans-latin-ext-Bold.woff2) format('woff2');
                 unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
             }
 
@@ -265,11 +143,11 @@
                 font-style: normal;
                 font-weight: 700;
                 font-display: swap;
-                src: url(https://s0.wp.com/wp-content/themes/pub/blockbase/assets/fonts/dm-sans/dm-sans-Bold.woff2) format('woff2');
+                src: url(../../wp-content/themes/blockbase/assets/fonts/dm-sans/dm-sans-Bold.woff2) format('woff2');
                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
             }
         </style>
-        <link crossorigin='anonymous' rel='stylesheet' id='all-css-2-1' href='https://s0.wp.com/wp-content/mu-plugins/jetpack-plugin/moon/modules/related-posts/related-posts.css?m=1705437079i&cssminify=yes' type='text/css' media='all'/>
+        <link rel='stylesheet' id='all-css-2-1' href='../../wp-content/themes/blockbase/assets/css/all-css-2-1.css' media='all'/>
         <style id='wp-block-site-logo-inline-css'>
             .wp-block-site-logo {
                 box-sizing: border-box;
@@ -879,7 +757,7 @@
                 color: #000
             }
         </style>
-        <link crossorigin='anonymous' rel='stylesheet' id='all-css-18-1' href='https://s0.wp.com/wp-content/plugins/gutenberg-core/v19.4.0/build/block-library/blocks/navigation/style.css?m=1728516282i&cssminify=yes' type='text/css' media='all'/>
+        <link rel='stylesheet' id='all-css-18-1' href='../../wp-content/themes/blockbase/assets/css/all-css-18-1.css' type='text/css' media='all'/>
         <style id='wp-block-post-title-inline-css'>
             .wp-block-post-title {
                 box-sizing: border-box;
@@ -1318,7 +1196,7 @@
                 z-index: 100000;
             }
         </style>
-        <link crossorigin='anonymous' rel='stylesheet' id='all-css-40-1' href='https://s0.wp.com/_static/??/wp-content/mu-plugins/core-compat/wp-mediaelement.css,/wp-content/mu-plugins/wpcom-bbpress-premium-themes.css?m=1432920480j&cssminify=yes' type='text/css' media='all'/>
+        <link rel='stylesheet' id='all-css-40-1' href='../../wp-content/themes/blockbase/assets/css/all-css-40-1.css' media='all'/>
         <style id='global-styles-inline-css'>
             :root {
                 --wp--preset--aspect-ratio--square: 1;
@@ -2349,23 +2227,10 @@
             .wp-container-core-group-is-layout-10 > * + * {
                 margin-block-start:0px;margin-block-end:0;}
         </style>
-        <link crossorigin='anonymous' rel='stylesheet' id='all-css-44-1' href='https://s0.wp.com/_static/??-eJx9juEOgjAMhF/IWTRRwg/jswwss7KtyLoQ396KUVET/vXu+rUHY28ajoJRIGTT++woJmg4BLWMpw5VpR9nrc4KCCILKZ3ewzOY3ZQzBr3Q5xpqz01X24RgU0JRk+OtJe+XoGu2p8HKC5mSv/1Z8QH1jdPRTa0/cglyyEbLWSGOX8K03tLwQI/hsCm3VVHu9kV1uQOHx3Pz&cssminify=yes' type='text/css' media='all'/>
-        <style id='jetpack-global-styles-frontend-style-inline-css'>
-            :root {
-                --font-headings: unset;
-                --font-base: unset;
-                --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-                --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-            }
-        </style>
-        <link crossorigin='anonymous' rel='stylesheet' id='all-css-46-1' href='https://s0.wp.com/wp-content/themes/h4/global.css?m=1420737423i&cssminify=yes' type='text/css' media='all'/>
-        <script id="media-video-jwt-bridge-js-extra">
-            var videopressAjax = {
-                "ajaxUrl": "https:\/\/labpaad.wordpress.com\/wp-admin\/admin-ajax.php",
-                "bridgeUrl": "\/wp-content\/mu-plugins\/jetpack-plugin\/moon\/jetpack_vendor\/automattic\/jetpack-videopress\/build\/lib\/token-bridge.js",
-                "post_id": "175"
-            };
-        </script>
+        <link rel='stylesheet' id='all-css-44-1' href='../../wp-content/themes/blockbase/assets/css/all-css-40-1.css' media='all'/>
+        
+        <link rel='stylesheet' id='all-css-46-1' href='../../wp-content/themes/blockbase/assets/css/all-css-46-1.css' media='all'/>
+        
         <script id="wpcom-actionbar-placeholder-js-extra">
             var actionbardata = {
                 "siteID": "204113684",
@@ -2385,12 +2250,8 @@
                 }
             };
         </script>
-        <script id="jetpack-mu-wpcom-settings-js-before">
-            var JETPACK_MU_WPCOM_SETTINGS = {
-                "assetsUrl": "https:\/\/s0.wp.com\/wp-content\/mu-plugins\/jetpack-mu-wpcom-plugin\/moon\/vendor\/automattic\/jetpack-mu-wpcom\/src\/build\/"
-            };
-        </script>
-        <script crossorigin='anonymous' type='text/javascript' src='https://s0.wp.com/_static/??/wp-content/js/rlt-proxy.js,/wp-content/mu-plugins/jetpack-plugin/moon/jetpack_vendor/automattic/jetpack-videopress/build/lib/token-bridge.js?m=1725888675j'></script>
+        
+        <script type='text/javascript' src='../../wp-content/themes/blockbase/assets/js/token-bridge.js'></script>
         <script id="rlt-proxy-js-after">
             rltInitialize({
                 "token": null,
@@ -2398,10 +2259,8 @@
             });
         </script>
         <meta name="generator" content="WordPress.com"/>
-        <link rel="canonical" href="https://labpaad.com/sobre/"/>
-        <link rel='shortlink' href='https://wp.me/PdOric-2P'/>
-        <link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Flabpaad.com%2Fsobre%2F&amp;for=wpcom-auto-discovery"/>
-        <link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Flabpaad.com%2Fsobre%2F&amp;for=wpcom-auto-discovery"/>
+        <link rel="canonical" href="../../pages/sobre/"/>
+        <link rel='shortlink' href='../../pages/sobre/'/>
         <!-- Jetpack Open Graph Tags -->
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Sobre"/>
@@ -2420,14 +2279,7 @@
         <meta name="twitter:image" content="../../wp-content/uploads/2022/08/screenshot_1-1.png?w=240"/>
         <meta name="twitter:card" content="summary"/>
         <!-- End Jetpack Open Graph Tags -->
-        <script type="importmap" id="wp-importmap">
-            {
-                "imports": {
-                    "@wordpress\/interactivity": "https:\/\/s0.wp.com\/wp-content\/plugins\/gutenberg-core\/v19.4.0\/build-module\/interactivity\/index.min.js?ver=4a38a9230b5be1bd6e68"
-                }
-            }</script>
-        <script type="module" src="https://s0.wp.com/wp-content/plugins/gutenberg-core/v19.4.0/build-module/block-library/navigation/view.min.js?ver=7b370e821516feba4955" id="@wordpress/block-library/navigation/view-js-module"></script>
-        <link rel="modulepreload" href="https://s0.wp.com/wp-content/plugins/gutenberg-core/v19.4.0/build-module/interactivity/index.min.js?ver=4a38a9230b5be1bd6e68" id="@wordpress/interactivity-js-modulepreload">
+ 
         <meta name="application-name" content="Pesquisas aplicadas A análise de dados"/>
         <meta name="msapplication-window" content="width=device-width;height=device-height"/>
         <meta name="msapplication-tooltip" content="Siga as publicações, projetos e notícias dos PAAD em nossas redes sociais e repositórios de códigos"/>
@@ -2621,13 +2473,13 @@
             <p></p>
         </div>
         <!-- wpcom_wp_footer -->
-        <script src="//0.gravatar.com/js/hovercards/hovercards.min.js?ver=202443448e29c9ec460f70535c7958cd60e9e2980f935c5309d61d08f40d080a876779" id="grofiles-cards-js"></script>
+        <script src="../../wp-content/themes/blockbase/assets/js/grofiles-cards.js" id="grofiles-cards-js"></script>
         <script id="wpgroho-js-extra">
             var WPGroHo = {
                 "my_hash": ""
             };
         </script>
-        <script crossorigin='anonymous' type='text/javascript' src='https://s0.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1610363240i'></script>
+        <script type='text/javascript' src='../../wp-content/themes/blockbase/assets/js/wpghoro.js'></script>
         <script>
             // Initialize and attach hovercards to all gravatars
             (function() {
@@ -2778,7 +2630,7 @@
             )();
             // ]]>
         </script>
-        <script src="//stats.wp.com/w.js?67" defer></script>
+        <script src="../../wp-content/themes/blockbase/assets/js/w.js" defer></script>
         <script type="text/javascript">
             _tkq = window._tkq || [];
             _stq = window._stq || [];
